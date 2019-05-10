@@ -1,0 +1,141 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css//main.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="flexed flexed--end">
+      <a href="#" class="nav__link">TRIPS</a>
+      <a href="#" class="nav__link">RECENTLY VIEWED</a>
+      <a href="#" class="nav__link">BOOKINGS</a>
+      <figure>
+        <img src="./images/USER.svg" alt="user" height="65">
+      </figure>
+    </nav>
+    <hr>
+  </div>
+
+  <div class="container">
+    <div class="flexed spaced" style="padding: 3em 0;">
+      <div class="card-holder" style="width: 50%">
+
+        <div>
+          <p class="card-holder__heading">Payment Information</p>
+          <p class="card-holder__sub-heading">Choose your method of payment.</p>
+        </div>
+
+        <div class="card" style="margin-top: 1em;">
+          <p class="mt-1">CARD NUMBER</p>
+          <p >4324543393821030</p>
+          <figure class="mt-1">sim stuff******</figure>
+          <p class="mt-1">EXPIRATION DATE</p>
+          <p>03/24</p>
+          <div class="flexed spaced" class="mt-1">
+            <p>John Doe</p>
+            <figure>
+              <img src="./images/mastercardlogo.svg" alt="mastercard" height="30">
+            </figure>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-2" style="width: 50%">
+
+        <div class="flexed">
+          <div class="flexed">
+            <figure>
+              <img src="./images/VISA.svg" alt="visa" height="30">
+            </figure>
+            <figure style="margin-left: 1em; margin-right: 1em;">
+              <img src="./images/DISCOVER.svg" alt="discover" height="30">
+            </figure>
+          </div>
+          
+          <div class="flexed">
+            <input type="checkbox" name="" id="" style="margin-right: 0.3em; margin-top: 0.6em;">
+            <figure style="margin-left: 1em;">
+              <img src="./images/PAYPAL.svg" alt="paypal" height="30">
+            </figure>
+          </div>
+        </div>
+
+        <form>
+          <div class="form-group flexed">
+
+            <div class="form-group__element">
+              <label>Credit card number</label><br>
+              <input type="text" value="4324 5433 9382 1030" class="form-input">
+            </div>
+
+            <div class="form-group__element">
+              <label>Expiration date</label><br>
+              <input type="text" value="03/24" class="form-input">
+            </div>
+
+          </div>
+
+          <div class="form-group flexed">
+
+            <div class="form-group__element">
+              <label>Security code</label><br>
+              <input type="text" value="420" class="form-input">
+            </div>
+
+            <div class="form-group__element">
+              <label>Postal code</label><br>
+              <input type="text" value="10119" class="form-input">
+            </div>
+
+          </div>
+
+          <div class="flexed" style="align-items: center; margin: 1em 0">
+            <input type="checkbox" name="" id="">
+            <p style="margin-left: 1em;">Use this card for next time purchase</p>
+          </div>
+          <button class="form-button">Add card</button>
+        </form>
+      </div>
+    </div>
+    
+    <hr>
+
+    <div class="flexed spaced" style="margin: 2em 0;">
+
+      <div class="col-1">
+        <p class="info">Subtotal</p>
+        <p class="info">Estimated TAX</p>
+        <p class="info">Promotional Code: <span class="grey">Z4KXLM9A</span></p>
+      </div>
+
+      <div class="col-2">
+        <p class="info">₦2,497.00</p>
+        <p class="info">₦119.64</p>
+        <p class="info">₦-60.00</p>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="flexed spaced" style="align-items: center; margin: 2em 0;">
+      <div class="col-1">
+        <button class="form-button">Complete Payment</button>
+      </div>
+
+      <div class="col-2">
+        <p style="font-size: 1.5em; font-weight: bold;">TOTAL:₦2556.64</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
