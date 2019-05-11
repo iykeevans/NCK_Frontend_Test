@@ -3,12 +3,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    /* border: 1px solid; */
+    transition: .5s;
+}
+
+body {
+    color: #32394B;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #32394B;
     font-size: 1.4em;
     font-weight: bold;
 }
@@ -16,23 +20,74 @@ a {
 nav {
     border-color: red;
     margin-top: 2em;
+    padding-bottom: 0;
     margin-bottom: 6em;
 }
 
+.nav-hamburger {
+    position: absolute;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.nav__links {
+    margin-top: 2.3em;
+}
+
 .nav__link {
-    margin-top: 1.5em;
     padding-right: 3em;
+    font-size: 1.2em;
+}
+
+.half-col {
+    flex-basis: 50%;
+}
+
+.card-section {
+    padding: 3em 0;
 }
 
 .card {
-    border: 1px solid;
     padding: 2em 2em;
     border-radius: 5px;
-    width: 70%;
+    width: 75%;
+    background-color: #de5545;
+    background-image: linear-gradient(62deg, #de5545 6%, #5e62cc 100%);
+    color: white;
+}
+
+.card__text {
+    font-size: 0.8em;
+}
+
+.mt-2 {
+    margin-top: 2em;
 }
 
 .mt-1 {
     margin-top: 1em;
+}
+
+.mt-half {
+    margin-top: 0.5em;
+}
+
+.mb-1 {
+    margin-bottom: 1em;
+}
+
+.mr-1 {
+    margin-right: 1em;
+}
+
+.centered {
+    align-items: center;
 }
 
 .container {
@@ -63,17 +118,24 @@ nav {
     font-size: 0.9em;
 }
 
+.form {
+    padding-top: 2em;
+}
+
 .form-group__element {
-    margin-top: 1em;
+    margin-top: 2em;
+    flex-basis: 48%;
 }
 
 .form-input {
     font-size: 0.9em;
+    font-weight: bold;
     padding: 0.9em 1em;
     border-radius: 5px;
-    border: 1px solid;
-    margin-top: 0.4em;
-    display: block;
+    border: 2px solid #E1E1E3;
+    margin-top: 1em;
+    background-color: #F0F1F3;
+    width: 100%;
 }
 
 .form-button {
@@ -82,6 +144,13 @@ nav {
     font-size: 1em;
     border-radius: 5px;
     border: 1px solid;
+    background-color: #3F67EA;
+    color: white;
+}
+
+#form-radio {
+    background: #E1E1E3;
+    border-style: none;
 }
 
 .info {
@@ -90,6 +159,78 @@ nav {
     margin: 1em 0;
 }
 
-.grey {
-    color: grey;
+.promo-code {
+    color: #ADB1B9;
+}
+
+.total {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+hr {
+    color: #F0F1F3;
+    border: 1px solid;
+}
+
+/* Media Queries start here */
+@media screen and (max-width: 600px) {
+    .is-hidden--mobile {
+        display: none;
+    }
+    .nav__links {
+        position: absolute;
+        width: 90%;
+        top: 5em;
+        background-color: #3F67EA;
+        padding: 1em;
+    }
+
+    .nav__link {
+        display: block;
+        color: white;
+        padding: 1em;
+    }
+
+    .nav__avatar {
+        position: absolute;
+        right: 1em;
+    }
+
+    .nav-hamburger {
+        display: flex;
+        position: absolute;
+        top: 1.3em;
+        align-self: center;
+        border: 1px solid;
+        padding: 0 0.2em;
+        font-size: 2em;
+        border-radius: 5px;
+        background: transparent;
+    }
+
+    .nav-hamburger:hover,
+    .nav-hamburger:focus {
+        color: white;
+        background-color: #32394B;
+    }
+
+    .flexed--col {
+        flex-direction: column;
+    }
+    nav {
+        justify-content: space-between !important;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-preview {
+        margin: 3em 0 0 0;
+        justify-content: center;
+    }
+    .total {
+        margin-top: 1em;
+    }
 }
